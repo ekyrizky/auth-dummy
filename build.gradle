@@ -6,12 +6,12 @@ publishing {
     publications {
         release(MavenPublication) {
             // Ensure the correct .aar file name and path
-            artifact("flutter_release-1.0.2.aar")  // Change this if you generated a new .aar file for 1.0.2
+            artifact("flutter_release-1.0.aar")  // Change this if you generated a new .aar file for 1.0.2
 
             // Maven coordinates: groupId, artifactId, version
             groupId = 'com.github.ekyrizky'   // Replace with your GitHub username
             artifactId = 'auth-sdk'           // The name of your SDK (use whatever name you want)
-            version = '1.0.2'                 // Update version to 1.0.2
+            version = '1.0.3'                 // Update version to 1.0.2
 
             // Include POM metadata for Maven dependencies
             pom.withXml {
