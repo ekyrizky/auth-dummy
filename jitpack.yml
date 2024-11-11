@@ -1,6 +1,6 @@
 jdk:
-  - openjdk11
+  - openjdk11 # Ensure you're using JDK 11 or a version compatible with your code
 
 android:
-  build: false # Skip the default Android build
+  build: false # Skip the default Android build since Flutter build handles this
   module: "."
