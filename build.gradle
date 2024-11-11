@@ -1,0 +1,25 @@
+plugins {
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            // Path to your .aar file
+            artifact("auth-sdk.aar")
+            
+            // Group, artifact, and version for Maven coordinates
+            groupId = 'com.github.ekyrizky'   // Replace with your GitHub username
+            artifactId = 'auth-sdk'           // The name of the repo
+            version = '1.0.0'                 // Set the SDK version
+
+            // Use generated .pom file for dependency information
+            pom.withXml {
+                def root = asNode()
+                root.appendNode('description', 'Auth SDK for Authentication')
+                root.appendNode('name', 'Auth SDK')
+                root.appendNode('url', 'https://github.com/username/auth-sdk')
+            }
+        }
+    }
+}

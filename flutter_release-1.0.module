@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "id.visionplus.atv_payment_module",
+    "module": "flutter_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "armeabi_v7a_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "arm64_v8a_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_64_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.pathprovider",
+          "module": "path_provider_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_release-1.0.aar",
+          "url": "flutter_release-1.0.aar",
+          "size": 8301592,
+          "sha512": "5bf8ef29fd266600094f7b214fb5bc165728a869555de8d25aa2deace44a74f8a0d5c0f641cc644562ff0c05b1abb7616cd5a7686294621957c1fa2b44fa44ea",
+          "sha256": "91d87309900eaa556f73907e4449f8c7776b83af6c2bda8b91bcda480a8b2dfc",
+          "sha1": "86183f6827f5170e2ac41f76094f792ef6555aaf",
+          "md5": "5d33ba46cdd75f1bfb553d76d213eee9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "armeabi_v7a_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "arm64_v8a_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter",
+          "module": "x86_64_release",
+          "version": {
+            "requires": "1.0.0-a6bd3f1de158bb61090e0c8053df93a10cb548e1"
+          }
+        },
+        {
+          "group": "io.flutter.plugins.pathprovider",
+          "module": "path_provider_android_release",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_release-1.0.aar",
+          "url": "flutter_release-1.0.aar",
+          "size": 8301592,
+          "sha512": "5bf8ef29fd266600094f7b214fb5bc165728a869555de8d25aa2deace44a74f8a0d5c0f641cc644562ff0c05b1abb7616cd5a7686294621957c1fa2b44fa44ea",
+          "sha256": "91d87309900eaa556f73907e4449f8c7776b83af6c2bda8b91bcda480a8b2dfc",
+          "sha1": "86183f6827f5170e2ac41f76094f792ef6555aaf",
+          "md5": "5d33ba46cdd75f1bfb553d76d213eee9"
+        }
+      ]
+    }
+  ]
+}
