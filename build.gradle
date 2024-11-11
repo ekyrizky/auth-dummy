@@ -5,26 +5,25 @@ plugins {
 publishing {
     publications {
         release(MavenPublication) {
-            // Point to the correct .aar file
-            artifact("flutter_release-1.0.aar")  // The .aar file you want to publish
+            // Ensure the correct .aar file name and path
+            artifact("flutter_release-1.0.2.aar")  // Change this if you generated a new .aar file for 1.0.2
 
             // Maven coordinates: groupId, artifactId, version
             groupId = 'com.github.ekyrizky'   // Replace with your GitHub username
             artifactId = 'auth-sdk'           // The name of your SDK (use whatever name you want)
-            version = '1.0.1'                 // Version of your SDK
+            version = '1.0.2'                 // Update version to 1.0.2
 
             // Include POM metadata for Maven dependencies
             pom.withXml {
                 def root = asNode()
                 root.appendNode('description', 'Auth SDK for Authentication')  // Adjust this description
                 root.appendNode('name', 'Auth SDK')  // SDK name
-                root.appendNode('url', 'https://github.com/ekyrizky/auth-sdk')  // Replace with actual repo URL
+                root.appendNode('url', 'https://github.com/ekyrizky/auth-dummy')  // Replace with actual repo URL
             }
         }
     }
 }
 
-// Optional: Ensure the task depends on assembling the .aar file
 tasks.named("publish") {
-    dependsOn "assemble"  // Ensure the artifact is ready before publishing
+    dependsOn "publishReleasePublicationToMavenRepository"
 }
